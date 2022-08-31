@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ternary Operator</title>
+</head>
+
+<body>
+    <script>
+        /* If statement biasa */
+
+        const nilai = 75
+        let ucapan;
+
+        if (nilai >= 75) {
+            ucapan = `Selamat anda Lulus dengan nilai ${nilai}`
+        } else {
+            ucapan = `maaf anda tidak lulus karena nilai anda kurang dari 75, nilai anda adalah ${nilai}`
+        }
+
+        document.writeln(`${ucapan}`)
+
+        /* Ternary operator */
+
+        const nilai2 = 65;
+        const ucapan2 = nilai2 >= 75 ? `<br>Selamat anda lulus dengan nilai ${nilai2}` :
+            `<br>maaf anda tidak lulus karena nilai ada kurang dari 75, nilai anda adalah ${nilai2}`
+
+        document.writeln(`${ucapan2}`)
+    </script>
+</body>
+
+</html>
