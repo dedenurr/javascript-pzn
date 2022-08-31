@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+
+<body>
+    <script>
+        const nilai = "A"
+        switch (nilai) {
+            case "A":
+                document.writeln(`<p>selamat anda lulus memuaskan dengan nilai ${nilai}<p>`)
+                break
+            case "B":
+            case "C":
+                document.writeln(`<p>Anda lulus dengan nilai ${nilai}<p>`)
+                break
+            case "D":
+                document.writeln(`<p>Anda tidak lulus karena nilai anda ${nilai}<p>`)
+                break
+            default:
+                document.writeln(`<p> Anda Salah Jurusan`)
+                break;
+        }
+
+        if (nilai === "A") {
+            document.writeln(`<p>selamat anda lulus memuaskan dengan nilai ${nilai}<p>`)
+        } else if (nilai === "B" || nilai === "C") {
+            document.writeln(`<p>anda lulus dengan nilai ${nilai}<p>`)
+        } else if (nilai === "D") {
+            document.writeln(`<p> anda tidak lulus karena nilai ${nilai}<p>`)
+        } else {
+            document.writeln(`<p>Anda Salah Jurusan<p>`)
+        }
+    </script>
+</body>
+
+</html>
