@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator In</title>
+</head>
+
+<body>
+    <script>
+        const person = {
+            firstName: "dede",
+            lastName: "nurrahman"
+        }
+
+        if ("firstName" in person) {
+            document.writeln(`isi dari property "firstName" adalah ${person.firstName}`)
+        } else {
+            document.writeln(`tidak ada property "firstName" didalam object person`)
+        }
+
+        const student = {
+            firstName: "zahra",
+            middleName: undefined,
+            LastName: "Nurrahman"
+        }
+
+        if ("middleName" in student) {
+            document.writeln(`<br>isi dari property "middleName" dalam object "student" adalah ${student.middleName}`)
+        } else {
+            document.writeln(`<br>Tidak ada property "middleName" dalam object "student" `)
+        }
+
+        const names = [null, "Adel", null];
+        const result = 0 in names;
+        document.writeln(`<p>${result}</p>`)
+    </script>
+</body>
+
+</html>
