@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Template</title>
+</head>
+
+<body>
+    <script>
+        const nama = "Dede Nurrahman";
+        const hobi = "belajar";
+        const value = 80;
+        const multiLineString = `Hallo nama saya dede
+        saya mempunyai anak cantik namanya zahra`;
+        const lama = "Hallo Nama Saya " + nama + " Hobi Saya " + hobi + "";
+        const stringTemplate = `menggunakan string template, Hallo nama saya ${nama} Hobi saya ${hobi}`;
+        const stringTemplate2 = `Nama :${nama}, Lulus ${value>70}`;
+
+        document.writeln("<pre>");
+        document.writeln(multiLineString)
+        document.writeln("</pre>");
+        document.writeln(stringTemplate2, "</br>")
+        document.writeln(stringTemplate, "</br>");
+        document.writeln(lama);
+    </script>
+</body>
+
+</html>
