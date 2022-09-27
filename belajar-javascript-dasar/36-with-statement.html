@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>With Statement</title>
+</head>
+<body>
+    <script>
+        // tanpa with statement
+        const person = {
+            firstName:"Zahra",
+            middleName:"Assifa",
+            lastName:"Nurrahman"
+        }
+       document.writeln(person.firstName);
+       document.writeln(person.middleName);
+       document.writeln(person.lastName);
+
+       // dengan with statment
+       const person2 = {
+            firstName:"Arsyam",
+            middleName:"Cool",
+            lastName:"Nurrahman"
+        }
+ 
+        with(person2){
+        document.writeln(firstName);
+        document.writeln(middleName);
+        document.writeln(lastName);
+        }
+    </script>
+</body>
+</html>
