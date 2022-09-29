@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Sebagai value</title>
+</head>
+<body>
+    <script>
+        //  #1 Function di variabel
+        function sayHello(name) {
+            console.log(`Hello ${name}`)
+        }
+
+        let say = sayHello;
+        sayHello("dede")
+        say("rahman")
+
+        // #2 function di parameter
+ 
+        function giveMeName(callback) {
+            callback("dede ganteng bingit")
+        }
+
+        giveMeName(sayHello)
+        giveMeName(say)
+    </script>
+</body>
+</html>
